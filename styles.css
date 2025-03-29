@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.circle.active {
+    background-color: green;
+}
+
+.progress-line {
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    top: 12px; /* Center line vertically with circles */
+    left: 15px; /* Adjust to line up with circles */
+    width: calc(100% - 30px); /* Full width minus circle sizes */
+}
+
+button {
+    margin-top: 20px;
+}
